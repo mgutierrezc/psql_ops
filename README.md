@@ -1,4 +1,4 @@
-# PSQL
+# PSQL Ops
 Repo with PSQL operation codes
 
 # Create Diagram/Upload Data to AWS RDS
