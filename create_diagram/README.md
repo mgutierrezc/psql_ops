@@ -1,6 +1,6 @@
-README.txt
+# README
 
-HOW TO USE:
+## HOW TO USE:
 Change the variables in database.ini to create a table in the
 intended database with a particular username and password
 (the database.ini file must be created by the user; see
@@ -18,7 +18,7 @@ identifier).
 To run the program, type "python connect.py" in the relevant
 directory.
 
-Structure for database.ini:
+### Structure for database.ini:
 [postgresql]
 host=
 database=
@@ -26,14 +26,11 @@ user=
 password=
 
 
-DETAILS:
+## DETAILS:
 create_diagram.py detects if any of the variable names are 
 reserved keywords in Python or Postgres. If so, it adds
 "_var" at the end of the variable name, and at the end it prints
 a list with all the variables that were using reserved keywords.
 
-
-
-
-Python connection to PostgreSQL largely based on this tutorial:
+### Python connection to PostgreSQL largely based on this tutorial:
 https://www.postgresqltutorial.com/postgresql-python/connect/
