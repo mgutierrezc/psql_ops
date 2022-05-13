@@ -29,19 +29,12 @@ def connect():
         
         # CHOOSE ONE, COMMENT OUT THE OTHER
         # if excel file (.xlsx), use pd.read_excel
-        df = pd.read_excel("FILEPATH HERE" )
+        df = pd.read_csv("D:\Accesos directos\Trabajo\World Bank\Audio Exp\output/upload_files/pilot_beh_data_2022-03-16.csv" )
         # if .dta file, use pd.read_stata
         # stata1 = pd.read_stata("FILEPATH HERE", convert_categoricals=False) # Note the convert_categoricals=False
         
-        command = create_diagram("TABLE_NAME HERE", df, primary_keys = None)
+        command = create_diagram("p_behavioral_22_03_16", df, primary_keys = None)
         
-        
-        test_command = """
-        CREATE TABLE test2 (
-            test_id2 int PRIMARY KEY,
-            test_name2 varchar
-        );
-        """
         
         cur.execute(command)
         

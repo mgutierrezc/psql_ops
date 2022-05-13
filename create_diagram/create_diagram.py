@@ -8,7 +8,7 @@ import json
 # List of reserved words obtained from https://www.postgresql.org/docs/7.3/sql-keywords-appendix.html
 
 
-def create_diagram(table_name, dataframe, primary_keys = None):
+def create_diagram(table_name, dataframe, primary_keys = ["WorkerId", "round_num"]):
     """
     Generate and create a psql table on the project server
     
