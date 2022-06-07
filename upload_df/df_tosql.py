@@ -7,7 +7,7 @@ import psycopg2
 def upload_to_psql(file_path, user, passw, host, db_name, table_name, option):
     """
     Uploads data file to psql
-    Supported formats: csv, xlsx
+    Supported formats: csv, xlsx, xls
     Input: Psql user, password, host name, database name, table name,
     upload option (strings)
     Output: None
