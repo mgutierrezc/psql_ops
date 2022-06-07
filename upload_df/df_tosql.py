@@ -15,7 +15,7 @@ def upload_to_psql(file_path, user, passw, host, db_name, table_name, option):
 
     if file_path.endswith(".csv"):
         df = pd.read_csv(file_path)
-    elif file_path.endswith(".xlsx"):
+    elif file_path.endswith((".xlsx", ".xls")):
         df = pd.read_excel(file_path)
     print(f"Step 1 completed: File {file_path} read")
 
@@ -42,6 +42,3 @@ if __name__ == '__main__':
     option = input("Choose how you want to upload the data (append or replace): ")
 
     upload_to_psql(file_path, user, password, host, db_name, table_name, option)
-
-
-    
