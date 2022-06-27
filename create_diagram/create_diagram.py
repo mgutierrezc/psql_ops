@@ -127,7 +127,6 @@ if __name__ == '__main__':
     primary_keys = pre_primary_keys.split()
 
     sql_commands = create_diagram(table_name, dataframe, primary_keys)
-    print(sql_commands)
 
     with open(table_name + '.txt', 'w') as f:
         f.write(sql_commands)
